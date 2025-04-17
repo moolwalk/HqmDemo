@@ -1,2 +1,2 @@
 # HqmDemo
-Metadata for HqmDemo
+HqmDemo metadata

@@ -1,0 +1,7 @@
+E45C74CF-9164-3E53-63D5-B1F7A6FDF7CF qcusbcucsi8380 // SRC=QcUsbCPortUCSI.c MJ= MN=
+#typev QcUsbCPortUCSI_c1936 155 "%0ucs:c%10!d!: UsbCNotifyCallback : Returned SID Value as %11!s!" //   LEVEL=TRACE_LEVEL_INFORMATION FLAGS=DBG_PORT FUNC=UsbCNotifyCallback
+{
+portNum, ItemLong -- 10
+SIDValue, ItemEnum(_UCSI_SID_TYPE) -- 11
+}
+

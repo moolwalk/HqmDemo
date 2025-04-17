@@ -1,0 +1,6 @@
+8B5D8D9D-3751-3F86-78BC-3D4DCB11BF87 SafiDrv // SRC=ACPI.cpp MJ= MN=
+#typev ACPI_cpp247 10 "%0%10!s!" //   FLAGS=MYDRIVER_ALL_INFO LEVEL=TRACE_LEVEL_INFORMATION FUNC=Acpi::NotifyHandler
+{
+strBuff, ItemString -- 10
+}
+

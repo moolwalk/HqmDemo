@@ -1,0 +1,7 @@
+8f078397-c46b-3da2-8cdf-763b5a6805c7 Emuec // SRC=Trace.c MJ= MN=
+#typev Trace_c254 16 "%0%10!s!:[PY]%11!s!" //   LEVEL=(UCHAR)DebugPrintLevel FLAGS=TRACE_POLICY FUNC=DebugPrintPolicy
+{
+__DRIVER_NAME, ItemString -- 10
+debugMessageBuffer, ItemString -- 11
+}
+

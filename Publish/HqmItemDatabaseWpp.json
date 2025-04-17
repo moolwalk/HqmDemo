@@ -1,0 +1,44 @@
+[
+  {
+    "HqmId": "10000",
+    "HqmItemName": "PdoSelect",
+    "Math": "Raw",
+    "MathParameter": "\"\"",
+    "DriverName": "Emuec",
+    "DriverDate": "03/25/2025",
+    "MessageGuid": "8f078397-c46b-3da2-8cdf-763b5a6805c7",
+    "SourceLine": "Trace_c254",
+    "FunctionName": "DebugPrintPolicy",
+    "Enabled": "Enabled",
+    "MessageString": "#typev Trace_c254 16 \"%0%10!s!:[PY]%11!s!\" //   LEVEL=(UCHAR)DebugPrintLevel FLAGS=TRACE_POLICY FUNC=DebugPrintPolicy\r\n{\r\n__DRIVER_NAME, ItemString -- 10\r\ndebugMessageBuffer, ItemString -- 11\r\n}\r\n",
+    "Pattern": "\"Voltage= (\\d+)mV  Current= (\\d+)mA  Watt= (\\d+)mW\""
+  },
+  {
+    "HqmId": "10002",
+    "HqmItemName": "UcsiSid",
+    "Math": "Histogram",
+    "MathParameter": "\"*\"",
+    "DriverName": "qcusbcucsi8380",
+    "DriverDate": "12/17/2024",
+    "MessageGuid": "E45C74CF-9164-3E53-63D5-B1F7A6FDF7CF",
+    "SourceLine": "QcUsbCPortUCSI_c1936",
+    "FunctionName": "UsbCNotifyCallback",
+    "Enabled": "Enabled",
+    "MessageString": "#typev QcUsbCPortUCSI_c1936 155 \"%0ucs:c%10!d!: UsbCNotifyCallback : Returned SID Value as %11!s!\" //   LEVEL=TRACE_LEVEL_INFORMATION FLAGS=DBG_PORT FUNC=UsbCNotifyCallback\r\n{\r\nportNum, ItemLong -- 10\r\nSIDValue, ItemEnum(_UCSI_SID_TYPE) -- 11\r\n}\r\n",
+    "Pattern": "\"UsbCNotifyCallback : Returned SID Value as.+0x([0-9a-f]+)\""
+  },
+  {
+    "HqmId": "10004",
+    "HqmItemName": "PerfModeWpp",
+    "Math": "Histogram",
+    "MathParameter": "\"*\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "04/12/2025",
+    "MessageGuid": "8B5D8D9D-3751-3F86-78BC-3D4DCB11BF87",
+    "SourceLine": "ACPI_cpp247",
+    "FunctionName": "Acpi::NotifyHandler",
+    "Enabled": "Enabled",
+    "MessageString": "#typev ACPI_cpp247 10 \"%0%10!s!\" //   FLAGS=MYDRIVER_ALL_INFO LEVEL=TRACE_LEVEL_INFORMATION FUNC=Acpi::NotifyHandler\r\n{\r\nstrBuff, ItemString -- 10\r\n}\r\n",
+    "Pattern": "\"ADBG: (MAXPERF|AUTO|SILENT)\""
+  }
+]

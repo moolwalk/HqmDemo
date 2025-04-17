@@ -1,0 +1,26 @@
+// BEGIN: Emuec Trace.c DebugPrintPolicy
+// GUID: 8f078397-c46b-3da2-8cdf-763b5a6805c7
+#typev Trace_c254 16 "%0%10!s!:[PY]%11!s!" //   LEVEL=(UCHAR)DebugPrintLevel FLAGS=TRACE_POLICY FUNC=DebugPrintPolicy
+{
+__DRIVER_NAME, ItemString -- 10
+debugMessageBuffer, ItemString -- 11
+}
+
+// END
+// BEGIN: qcusbcucsi8380 QcUsbCPortUCSI.c UsbCNotifyCallback
+// GUID: E45C74CF-9164-3E53-63D5-B1F7A6FDF7CF
+#typev QcUsbCPortUCSI_c1936 155 "%0ucs:c%10!d!: UsbCNotifyCallback : Returned SID Value as %11!s!" //   LEVEL=TRACE_LEVEL_INFORMATION FLAGS=DBG_PORT FUNC=UsbCNotifyCallback
+{
+portNum, ItemLong -- 10
+SIDValue, ItemEnum(_UCSI_SID_TYPE) -- 11
+}
+
+// END
+// BEGIN: SafiDrv ACPI.cpp Acpi::NotifyHandler
+// GUID: 8B5D8D9D-3751-3F86-78BC-3D4DCB11BF87
+#typev ACPI_cpp247 10 "%0%10!s!" //   FLAGS=MYDRIVER_ALL_INFO LEVEL=TRACE_LEVEL_INFORMATION FUNC=Acpi::NotifyHandler
+{
+strBuff, ItemString -- 10
+}
+
+// END

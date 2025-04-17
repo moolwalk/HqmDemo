@@ -1,0 +1,302 @@
+[
+  {
+    "HqmId": "1",
+    "HqmItemName": "BatteryTripPoint",
+    "Math": "RecentAverage",
+    "MathParameter": "\"RecentCount=3\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"ADBG: _BTP<S(\\d+)\""
+  },
+  {
+    "HqmId": "2",
+    "HqmItemName": "BlockCamMic",
+    "Math": "Histogram",
+    "MathParameter": "\"*\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"FetchSabiCommand:In:43 58 8a 00 00 82 ([0-9a-f]+)\""
+  },
+  {
+    "HqmId": "3",
+    "HqmItemName": "PerfMode",
+    "Math": "Histogram",
+    "MathParameter": "\"*\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"ADBG: (MAXPERF|AUTO|SILENT)\""
+  },
+  {
+    "HqmId": "4",
+    "HqmItemName": "MaintenanceMode",
+    "Math": "Count",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"FetchSabiCommand:In:43 58 94 00 00 81\""
+  },
+  {
+    "HqmId": "5",
+    "HqmItemName": "ModelName",
+    "Math": "Raw",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"PrintModelName - ModelName:(.+)\""
+  },
+  {
+    "HqmId": "6",
+    "HqmItemName": "SerialNumber",
+    "Math": "Raw",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"PrintSerialNumber - PcSerialNumber:(.+)\""
+  },
+  {
+    "HqmId": "7",
+    "HqmItemName": "DaysElapsedFromPurchase",
+    "Math": "Raw",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"DayesFromPurchaseDate:([\\d.:]+)\""
+  },
+  {
+    "HqmId": "8",
+    "HqmItemName": "WindowsVersion",
+    "Math": "Raw",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"OsDescription:Microsoft Windows (.+)\""
+  },
+  {
+    "HqmId": "9",
+    "HqmItemName": "UefiVersion",
+    "Math": "Raw",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"UefiVersion:(.+)\""
+  },
+  {
+    "HqmId": "10",
+    "HqmItemName": "MemoryInfo",
+    "Math": "Raw",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"MemoryCapacity:(\\d+)\""
+  },
+  {
+    "HqmId": "11",
+    "HqmItemName": "DriverVersionGraphics",
+    "Math": "Raw",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"DriverVersionOfDevice:Qualcomm.+Adreno.+(\\d+.\\d+.\\d+.\\d+)\""
+  },
+  {
+    "HqmId": "12",
+    "HqmItemName": "BatteryManufacturerName",
+    "Math": "Bytes2String",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"FetchSabiCommand:In:43 58 7a 00 00 82 8d 16 20.+Out:43 58 7a 00 aa 00 00 ([0-9a-f\\s]+)\""
+  },
+  {
+    "HqmId": "13",
+    "HqmItemName": "StateOfHealth1",
+    "Math": "Bytes2UInt16",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"FetchSabiCommand:In:43 58 7a 00 00 82 8c 16 10.+Out:43 58 7a 00 aa 00 00 ([0-9a-f]+ [0-9a-f]+)\""
+  },
+  {
+    "HqmId": "14",
+    "HqmItemName": "StateOfHealth2",
+    "Math": "Bytes2UInt16",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"FetchSabiCommand:In:43 58 7a 00 00 82 8c 16 18.+Out:43 58 7a 00 aa 00 00 ([0-9a-f]+ [0-9a-f]+)\""
+  },
+  {
+    "HqmId": "15",
+    "HqmItemName": "CellVoltage1",
+    "Math": "Bytes2UInt16",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"FetchSabiCommand:In:43 58 7a 00 00 82 8c 16 3f.+Out:43 58 7a 00 aa 00 00 ([0-9a-f]+ [0-9a-f]+)\""
+  },
+  {
+    "HqmId": "16",
+    "HqmItemName": "CellVoltage2",
+    "Math": "Bytes2UInt16",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"FetchSabiCommand:In:43 58 7a 00 00 82 8c 16 3e.+Out:43 58 7a 00 aa 00 00 ([0-9a-f]+ [0-9a-f]+)\""
+  },
+  {
+    "HqmId": "17",
+    "HqmItemName": "CellVoltage3",
+    "Math": "Bytes2UInt16",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"FetchSabiCommand:In:43 58 7a 00 00 82 8c 16 3d.+Out:43 58 7a 00 aa 00 00 ([0-9a-f]+ [0-9a-f]+)\""
+  },
+  {
+    "HqmId": "18",
+    "HqmItemName": "CellVoltage4",
+    "Math": "Bytes2UInt16",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"FetchSabiCommand:In:43 58 7a 00 00 82 8c 16 3c.+Out:43 58 7a 00 aa 00 00 ([0-9a-f]+ [0-9a-f]+)\""
+  },
+  {
+    "HqmId": "19",
+    "HqmItemName": "BatteryCycleCount",
+    "Math": "Bytes2UInt16",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"FetchSabiCommand:In:43 58 7a 00 00 82 8c 16 17.+Out:43 58 7a 00 aa 00 00 ([0-9a-f]+ [0-9a-f]+)\""
+  },
+  {
+    "HqmId": "20",
+    "HqmItemName": "SmartCharging",
+    "Math": "Histogram",
+    "MathParameter": "\"*\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"FetchSabiCommand:In:43 58 7a 00 00 82 e9 90 ([0-9a-f]+)\""
+  },
+  {
+    "HqmId": "21",
+    "HqmItemName": "FirmwareVersionTouchPad",
+    "Math": "Raw",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"FirmwareVersionOfTouchPad:(\\d+)\""
+  },
+  {
+    "HqmId": "22",
+    "HqmItemName": "FirmwareVersionTsp",
+    "Math": "Raw",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"FirmwareVersionOfTsp:(\\d+)\""
+  },
+  {
+    "HqmId": "23",
+    "HqmItemName": "KbdBacklight",
+    "Math": "Histogram",
+    "MathParameter": "\"*\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"FetchSabiCommand:In:43 58 78 00 00 82 ([0-9a-f]+)\""
+  },
+  {
+    "HqmId": "24",
+    "HqmItemName": "DriverVersionSafiDrv",
+    "Math": "Raw",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"DriverVersionOfDevice:Samsung Firmware Interface Device.+(\\d+.\\d+.\\d+.\\d+)\""
+  },
+  {
+    "HqmId": "25",
+    "HqmItemName": "DriverVersionFingerprint",
+    "Math": "Raw",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"DriverVersionOfDevice:.+Fingerprint.+Sensor.+(\\d+.\\d+.\\d+.\\d+)\""
+  },
+  {
+    "HqmId": "26",
+    "HqmItemName": "MaxPerfUsage",
+    "Math": "StopWatch",
+    "MathParameter": "\"Start=MAXPERF;Stop=AUTO;Reset=SILENT\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Disabled",
+    "Pattern": "\"ADBG: (MAXPERF|AUTO|SILENT)\""
+  },
+  {
+    "HqmId": "27",
+    "HqmItemName": "PerfModeLUT",
+    "Math": "Table",
+    "MathParameter": "\"MAXPERF=2;AUTO=1;SILENT=0\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Disabled",
+    "Pattern": "\"ADBG: (MAXPERF|AUTO|SILENT)\""
+  },
+  {
+    "HqmId": "28",
+    "HqmItemName": "AssyConnTypeC",
+    "Math": "Count",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"ADBG: _EVT:ASYC:\""
+  },
+  {
+    "HqmId": "29",
+    "HqmItemName": "PmicResetReason",
+    "Math": "Histogram",
+    "MathParameter": "\"*\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"PmicResetReason:([0-9a-f]+)\""
+  },
+  {
+    "HqmId": "30",
+    "HqmItemName": "BatterySerialNumber",
+    "Math": "Bytes2UInt16",
+    "MathParameter": "\"\"",
+    "DriverName": "SafiDrv",
+    "DriverDate": "01/01/2025",
+    "Enabled": "Enabled",
+    "Pattern": "\"FetchSabiCommand:In:43 58 7a 00 00 82 8c 16 1c.+Out:43 58 7a 00 aa 00 00 ([0-9a-f]+ [0-9a-f]+)\""
+  }
+]
