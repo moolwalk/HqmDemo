@@ -6,21 +6,23 @@ Each model has the individual branch. When an official release is rolled out, a 
 # Branches
 Branches are named after each project name.
 
-e.g.
-NX14
-NX16
+e.g.<br>
+NX14<br>
+NX16<br>
 ...
 
 Test branches can be made as below samples. 
-NX14/hw_test1
-NX14/hw_test2
-NX16/hw_test1
-NX16/hw_test2
+
+e.g.<br>
+NX14/hw_test1<br>
+NX14/hw_test2<br>
+NX16/hw_test1<br>
+NX16/hw_test2<br>
 
 
 # Tags
 Tags are named as {ProjectName}_{ReleaseDate}.
 
-e.g.
-NX14_0416
+e.g.<br>
+NX14_0416<br>
 ...
